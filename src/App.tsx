@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { FC, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { SSL_OP_SINGLE_ECDH_USE } from 'constants';
+
+
+interface CoolProps {
+  foo: number;
+  bar: string;
+}
+
+const Cool:FC<any> = (props) => {
+
+  return <>
+  { props.foo }
+  { props.bar }
+  </>
+}
+
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Cool foo={1} bar={'Hello Panupan'} />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
