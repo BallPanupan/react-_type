@@ -2,7 +2,9 @@ import React, { FC, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { SSL_OP_SINGLE_ECDH_USE } from 'constants';
+import { myObj } from '../src/modules/shared/utility/messages'
 
+console.log(myObj)
 
 interface CoolProps {
   foo: number;
